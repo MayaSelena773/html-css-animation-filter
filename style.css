@@ -52,7 +52,7 @@
     width: 60px;
     height: 60px;
     background: red;
-    transition: all 3s;
+    transition: all 1s;
 }
 
 /*solution-ex5*/
@@ -63,13 +63,55 @@
 }
 
 .ex-5-square:active {
-    margin: 0;
-    width: 40px;
-    height: 40px;
+    transform: scale(0.3);
 }
 
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+}
+
+/*solution-ex6*/
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+/*solution-ex7*/
+.ex-7-img{
+    transition: all 2s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%);
+}
+
+/*solution-ex8*/
+.ex-8-img:hover {
+   animation-name: filters;
+   animation-duration: 4s;
+}
+
+@keyframes filters{
+    0%{
+        filter: none;
+    }
+
+    25%{
+        filter: grayscale(100%);
+        border-radius: 20px;
+    }
+
+    50%{
+        filter: sepia(100%);
+        border-radius: 20px;
+    }
+
+    75%{
+        filter: sepia(100%);
+    }
+
+    100%{
+        filter: none;
+    }
 }
 
 .ex-9-img {
