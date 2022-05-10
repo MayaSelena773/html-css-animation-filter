@@ -118,6 +118,40 @@
     margin: 50px 100px;
     width: 400px;
 }
+
+/*solution-ex9*/
+.ex-9-img:hover{
+    animation-name: filter-scale;
+    animation-duration: 5s;
+}
+
+@keyframes filter-scale {
+    0%{
+        filter: none;
+    }
+
+    25%{
+        filter: contrast(50%);
+        border-radius: 20px;
+    }
+
+    50%{
+        filter: saturate(50%);
+        border-radius: 20px;
+    }
+
+    75%{
+        filter: saturate(50%);
+        border-radius: 20px;
+        transform: scale(0.4);
+    }
+
+    100%{
+        filter: saturate(50%);
+        border-radius: 20px;
+    }
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
